@@ -403,7 +403,7 @@ var DateInput = {render: function(){var _vm=this;var _h=_vm.$createElement;var _
         this.input.blur();
       }
 
-      if (this.typeable) {
+      if ((this.typeable) && (typeof this$1.format === 'string')) {
         var typedDate;
 
         /**
