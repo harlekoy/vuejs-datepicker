@@ -117,7 +117,7 @@ export default {
         this.input.blur()
       }
 
-      if (this.typeable) {
+      if ((this.typeable) && (typeof this$1.format === 'string')) {
         let typedDate
 
         /**
@@ -228,7 +228,7 @@ export default {
         this.typedDate = null
       }
 
-      this.$emit('closeCalendar', true)
+      this.$emit('closeCalendar')
     },
     /**
      * emit a clearDate event
